@@ -1,0 +1,601 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:music-maker-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L D D2
+U 1 1 58F79090
+P 5750 2850
+F 0 "D2" H 5750 2950 50  0000 C CNN
+F 1 "D" H 5750 2750 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_A-405_P7.62mm_Horizontal" H 5750 2850 50  0001 C CNN
+F 3 "" H 5750 2850 50  0000 C CNN
+	1    5750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 58F79193
+P 5350 2850
+F 0 "R9" V 5430 2850 50  0000 C CNN
+F 1 "100" V 5350 2850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5280 2850 50  0001 C CNN
+F 3 "" H 5350 2850 50  0000 C CNN
+	1    5350 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L SPEAKER SP1
+U 1 1 58F792A5
+P 5500 3400
+F 0 "SP1" H 5400 3650 50  0000 C CNN
+F 1 "SPEAKER" H 5400 3150 50  0000 C CNN
+F 2 "libs:piezo" H 5500 3400 50  0001 C CNN
+F 3 "" H 5500 3400 50  0000 C CNN
+	1    5500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2850 5500 2850
+Wire Wire Line
+	5200 3300 5100 3300
+Wire Wire Line
+	5100 3300 5100 2850
+Wire Wire Line
+	3800 2850 5200 2850
+Wire Wire Line
+	5900 2850 6000 2850
+Wire Wire Line
+	6000 2850 6000 2750
+$Comp
+L R R7
+U 1 1 58F793DA
+P 5100 3750
+F 0 "R7" V 5180 3750 50  0000 C CNN
+F 1 "100" V 5100 3750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5030 3750 50  0001 C CNN
+F 3 "" H 5100 3750 50  0000 C CNN
+	1    5100 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3600 5100 3500
+Wire Wire Line
+	5100 3500 5200 3500
+$Comp
+L LED D1
+U 1 1 58F79482
+P 5100 4200
+F 0 "D1" H 5100 4300 50  0000 C CNN
+F 1 "LED" H 5100 4100 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm_FlatTop" H 5100 4200 50  0001 C CNN
+F 3 "" H 5100 4200 50  0000 C CNN
+	1    5100 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 58F794D7
+P 4850 4500
+F 0 "C2" H 4875 4600 50  0000 L CNN
+F 1 "0.1uF" H 4875 4400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4888 4350 50  0001 C CNN
+F 3 "" H 4850 4500 50  0000 C CNN
+	1    4850 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NPN_BCE Q2
+U 1 1 58F79561
+P 5000 4950
+F 0 "Q2" H 5300 5000 50  0000 R CNN
+F 1 "DS548" H 5450 4900 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 5200 5050 50  0001 C CNN
+F 3 "" H 5000 4950 50  0000 C CNN
+	1    5000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4400 5100 4750
+Wire Wire Line
+	5000 4500 5100 4500
+Connection ~ 5100 4500
+Wire Wire Line
+	5100 4000 5100 3900
+$Comp
+L R R5
+U 1 1 58F796B7
+P 4600 3750
+F 0 "R5" V 4680 3750 50  0000 C CNN
+F 1 "10K" V 4600 3750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4530 3750 50  0001 C CNN
+F 3 "" H 4600 3750 50  0000 C CNN
+	1    4600 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3900 4600 5000
+Wire Wire Line
+	4600 4500 4700 4500
+$Comp
+L R R3
+U 1 1 58F7986E
+P 4350 3750
+F 0 "R3" V 4430 3750 50  0000 C CNN
+F 1 "10K" V 4350 3750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4280 3750 50  0001 C CNN
+F 3 "" H 4350 3750 50  0000 C CNN
+	1    4350 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 58F798AF
+P 4050 4500
+F 0 "C1" H 4075 4600 50  0000 L CNN
+F 1 "0.1uF" H 4075 4400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4088 4350 50  0001 C CNN
+F 3 "" H 4050 4500 50  0000 C CNN
+	1    4050 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 4500 4350 4500
+Wire Wire Line
+	4350 3900 4350 4950
+Wire Wire Line
+	4350 4950 4800 4950
+Connection ~ 4350 4500
+Wire Wire Line
+	3900 4500 3800 4500
+Wire Wire Line
+	3800 3900 3800 4800
+$Comp
+L R R1
+U 1 1 58F799D4
+P 3800 3750
+F 0 "R1" V 3880 3750 50  0000 C CNN
+F 1 "1.2K" V 3800 3750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3730 3750 50  0001 C CNN
+F 3 "" H 3800 3750 50  0000 C CNN
+	1    3800 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 3600 3800 2850
+Connection ~ 5100 2850
+Wire Wire Line
+	4350 3600 4350 2850
+Connection ~ 4350 2850
+$Comp
+L Q_NPN_BCE Q1
+U 1 1 58F79B1F
+P 3900 5000
+F 0 "Q1" H 4200 5050 50  0000 R CNN
+F 1 "DS548" H 4350 4950 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 4100 5100 50  0001 C CNN
+F 3 "" H 3900 5000 50  0000 C CNN
+	1    3900 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5000 4100 5000
+Connection ~ 4600 4500
+Connection ~ 3800 4500
+$Comp
+L GND #PWR01
+U 1 1 58F79CED
+P 3800 5250
+F 0 "#PWR01" H 3800 5000 50  0001 C CNN
+F 1 "GND" H 3800 5100 50  0000 C CNN
+F 2 "" H 3800 5250 50  0000 C CNN
+F 3 "" H 3800 5250 50  0000 C CNN
+	1    3800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58F79DB1
+P 5100 5250
+F 0 "#PWR02" H 5100 5000 50  0001 C CNN
+F 1 "GND" H 5100 5100 50  0000 C CNN
+F 2 "" H 5100 5250 50  0000 C CNN
+F 3 "" H 5100 5250 50  0000 C CNN
+	1    5100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5200 3800 5250
+Wire Wire Line
+	5100 5150 5100 5250
+Text Label 3800 2850 0    60   ~ 0
+Notes
+Wire Wire Line
+	4600 3450 4950 3450
+Text Label 4950 3450 2    60   ~ 0
+base
+$Comp
+L R R2
+U 1 1 58F7A43D
+P 4000 850
+F 0 "R2" V 4080 850 50  0000 C CNN
+F 1 "1.2K" V 4000 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3930 850 50  0001 C CNN
+F 3 "" H 4000 850 50  0000 C CNN
+	1    4000 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 850  3850 850 
+Wire Wire Line
+	4150 850  4250 850 
+Text Label 3550 850  0    60   ~ 0
+Notes
+Wire Wire Line
+	3800 850  3800 1150
+Connection ~ 3800 850 
+Wire Wire Line
+	4200 850  4200 1150
+Connection ~ 4200 850 
+$Comp
+L R R4
+U 1 1 58F7AC9E
+P 4400 850
+F 0 "R4" V 4480 850 50  0000 C CNN
+F 1 "2.2K" V 4400 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4330 850 50  0001 C CNN
+F 3 "" H 4400 850 50  0000 C CNN
+	1    4400 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 850  4650 850 
+Wire Wire Line
+	4600 850  4600 1150
+Connection ~ 4600 850 
+$Comp
+L R R6
+U 1 1 58F7AD83
+P 4800 850
+F 0 "R6" V 4880 850 50  0000 C CNN
+F 1 "2.2K" V 4800 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4730 850 50  0001 C CNN
+F 3 "" H 4800 850 50  0000 C CNN
+	1    4800 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 850  5050 850 
+Wire Wire Line
+	5000 850  5000 1150
+Connection ~ 5000 850 
+$Comp
+L R R8
+U 1 1 58F7AD92
+P 5200 850
+F 0 "R8" V 5280 850 50  0000 C CNN
+F 1 "2.2K" V 5200 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5130 850 50  0001 C CNN
+F 3 "" H 5200 850 50  0000 C CNN
+	1    5200 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 850  5450 850 
+Wire Wire Line
+	5400 850  5400 1150
+Connection ~ 5400 850 
+$Comp
+L R R10
+U 1 1 58F7B062
+P 5600 850
+F 0 "R10" V 5680 850 50  0000 C CNN
+F 1 "1.5K" V 5600 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5530 850 50  0001 C CNN
+F 3 "" H 5600 850 50  0000 C CNN
+	1    5600 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 850  5850 850 
+Wire Wire Line
+	5800 850  5800 1150
+Connection ~ 5800 850 
+$Comp
+L R R11
+U 1 1 58F7B071
+P 6000 850
+F 0 "R11" V 6080 850 50  0000 C CNN
+F 1 "3.3K" V 6000 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5930 850 50  0001 C CNN
+F 3 "" H 6000 850 50  0000 C CNN
+	1    6000 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 850  6250 850 
+Wire Wire Line
+	6200 850  6200 1150
+Connection ~ 6200 850 
+$Comp
+L R R12
+U 1 1 58F7B080
+P 6400 850
+F 0 "R12" V 6480 850 50  0000 C CNN
+F 1 "3.3K" V 6400 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6330 850 50  0001 C CNN
+F 3 "" H 6400 850 50  0000 C CNN
+	1    6400 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 850  6650 850 
+Wire Wire Line
+	6600 850  6600 1150
+Connection ~ 6600 850 
+$Comp
+L R R13
+U 1 1 58F7B08F
+P 6800 850
+F 0 "R13" V 6880 850 50  0000 C CNN
+F 1 "2.2K" V 6800 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6730 850 50  0001 C CNN
+F 3 "" H 6800 850 50  0000 C CNN
+	1    6800 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 850  7050 850 
+Wire Wire Line
+	7000 850  7000 1150
+Connection ~ 7000 850 
+$Comp
+L R R14
+U 1 1 58F7B4AB
+P 7200 850
+F 0 "R14" V 7280 850 50  0000 C CNN
+F 1 "3.9K" V 7200 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7130 850 50  0001 C CNN
+F 3 "" H 7200 850 50  0000 C CNN
+	1    7200 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 850  7400 1150
+Wire Wire Line
+	7400 850  7350 850 
+$Comp
+L CONN_01X02 P1
+U 1 1 58F7DC43
+P 3600 1200
+F 0 "P1" H 3600 1300 50  0000 C CNN
+F 1 "Note_0" V 3700 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 3600 1200 50  0001 C CNN
+F 3 "" H 3600 1200 50  0000 C CNN
+	1    3600 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3600 4600 3450
+$Comp
+L CONN_01X02 P2
+U 1 1 59452417
+P 4000 1200
+F 0 "P2" H 4000 1300 50  0000 C CNN
+F 1 "Note_1" V 4100 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 4000 1200 50  0001 C CNN
+F 3 "" H 4000 1200 50  0000 C CNN
+	1    4000 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 59452720
+P 4400 1200
+F 0 "P3" H 4400 1300 50  0000 C CNN
+F 1 "Note_2" V 4500 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 4400 1200 50  0001 C CNN
+F 3 "" H 4400 1200 50  0000 C CNN
+	1    4400 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 59452786
+P 4800 1200
+F 0 "P4" H 4800 1300 50  0000 C CNN
+F 1 "Note_3" V 4900 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 4800 1200 50  0001 C CNN
+F 3 "" H 4800 1200 50  0000 C CNN
+	1    4800 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P5
+U 1 1 594527E7
+P 5200 1200
+F 0 "P5" H 5200 1300 50  0000 C CNN
+F 1 "Note_4" V 5300 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 5200 1200 50  0001 C CNN
+F 3 "" H 5200 1200 50  0000 C CNN
+	1    5200 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 5945292C
+P 5600 1200
+F 0 "P6" H 5600 1300 50  0000 C CNN
+F 1 "Note_5" V 5700 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 5600 1200 50  0001 C CNN
+F 3 "" H 5600 1200 50  0000 C CNN
+	1    5600 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P7
+U 1 1 59452932
+P 6000 1200
+F 0 "P7" H 6000 1300 50  0000 C CNN
+F 1 "Note_6" V 6100 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 6000 1200 50  0001 C CNN
+F 3 "" H 6000 1200 50  0000 C CNN
+	1    6000 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P8
+U 1 1 59452938
+P 6400 1200
+F 0 "P8" H 6400 1300 50  0000 C CNN
+F 1 "Note_7" V 6500 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 6400 1200 50  0001 C CNN
+F 3 "" H 6400 1200 50  0000 C CNN
+	1    6400 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P9
+U 1 1 5945293E
+P 6800 1200
+F 0 "P9" H 6800 1300 50  0000 C CNN
+F 1 "Note_8" V 6900 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 6800 1200 50  0001 C CNN
+F 3 "" H 6800 1200 50  0000 C CNN
+	1    6800 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P10
+U 1 1 59452944
+P 7200 1200
+F 0 "P10" H 7200 1300 50  0000 C CNN
+F 1 "Note_9" V 7300 1200 50  0000 C CNN
+F 2 "libs:piano_key" H 7200 1200 50  0001 C CNN
+F 3 "" H 7200 1200 50  0000 C CNN
+	1    7200 1200
+	-1   0    0    1   
+$EndComp
+Text Label 7700 1500 2    60   ~ 0
+base
+Wire Wire Line
+	3800 1500 7700 1500
+Wire Wire Line
+	7400 1500 7400 1250
+Wire Wire Line
+	7000 1250 7000 1500
+Connection ~ 7400 1500
+Wire Wire Line
+	6600 1250 6600 1500
+Connection ~ 7000 1500
+Wire Wire Line
+	6200 1250 6200 1500
+Connection ~ 6600 1500
+Wire Wire Line
+	5800 1250 5800 1500
+Connection ~ 6200 1500
+Wire Wire Line
+	5400 1250 5400 1500
+Connection ~ 5800 1500
+Wire Wire Line
+	5000 1250 5000 1500
+Connection ~ 5400 1500
+Wire Wire Line
+	4600 1250 4600 1500
+Connection ~ 5000 1500
+Wire Wire Line
+	4200 1250 4200 1500
+Connection ~ 4600 1500
+Wire Wire Line
+	3800 1250 3800 1500
+Connection ~ 4200 1500
+$Comp
+L +9V #PWR03
+U 1 1 5945515B
+P 6000 2750
+F 0 "#PWR03" H 6000 2600 50  0001 C CNN
+F 1 "+9V" H 6000 2890 50  0000 C CNN
+F 2 "" H 6000 2750 50  0000 C CNN
+F 3 "" H 6000 2750 50  0000 C CNN
+	1    6000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 59456644
+P 7600 3150
+F 0 "BT1" H 7700 3200 50  0000 L CNN
+F 1 "Battery" H 7700 3100 50  0000 L CNN
+F 2 "libs:BH9VPC" V 7600 3190 50  0001 C CNN
+F 3 "" V 7600 3190 50  0000 C CNN
+	1    7600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR04
+U 1 1 59456741
+P 7600 2900
+F 0 "#PWR04" H 7600 2750 50  0001 C CNN
+F 1 "+9V" H 7600 3040 50  0000 C CNN
+F 2 "" H 7600 2900 50  0000 C CNN
+F 3 "" H 7600 2900 50  0000 C CNN
+	1    7600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 59456B8C
+P 7600 3400
+F 0 "#PWR05" H 7600 3150 50  0001 C CNN
+F 1 "GND" H 7600 3250 50  0000 C CNN
+F 2 "" H 7600 3400 50  0000 C CNN
+F 3 "" H 7600 3400 50  0000 C CNN
+	1    7600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3000 7600 2900
+Wire Wire Line
+	7600 3300 7600 3400
+$EndSCHEMATC
